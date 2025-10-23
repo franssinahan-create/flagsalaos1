@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* === Center the flag on the page === */
+    body {
+      margin: 0;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* === Flag of Laos === */
+    .flag {
+      background-color: #ce1126; /* Red */
+      width: 900px;
+      height: 600px;
+      position: relative;
+    }
+
+    /* Top text: "The Flag" */
+    .flag > p {
+      color: white;
+      text-align: center;
+      font-family: "Times New Roman", serif;
+      font-size: 50px;
+      margin: 0;
+      padding-top: 20px;
+    }
+
+    /* Blue stripe */
+    .flag > div {
+      background-color: #002868; /* Blue */
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      top: 150px;
+    }
+
+    /* White circle */
+    .flag > div > div {
+      background-color: white;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 350px;
+      top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Text inside the circle */
+    .flag > div > div > p {
+      font-family: "Times New Roman", serif;
+      color: black;
+      text-align: center;
+      line-height: 1;
+      margin: 0;
+    }
+
+    .flag > div > div > p .of {
+      font-size: 40px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .flag > div > div > p .laos {
+      font-size: 65px;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>
+          <span class="of">of</span>
+          <span class="laos">Laos</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
